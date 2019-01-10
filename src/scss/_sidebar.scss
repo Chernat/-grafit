@@ -1,0 +1,28 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 100vh;
+
+  &__menu {
+
+    &-list {
+      list-style: none;
+    }
+
+    &-item {
+
+      & a {
+        color: $link-color;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 1.6;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
