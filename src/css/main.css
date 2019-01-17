@@ -10,6 +10,23 @@ body {
   background-color: #fcec00;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 900;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -20,15 +37,90 @@ body {
   height: 100vh;
 }
 
+.sidebar__logo img {
+  max-width: 200px;
+  display: block;
+}
+
 .sidebar__menu-list {
   list-style: none;
 }
 
 .sidebar__menu-item a {
-  color: #000;
   font-size: 24px;
   font-weight: 900;
   line-height: 1.6;
-  text-decoration: none;
   text-transform: uppercase;
+}
+
+.sidebar__contact {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.sidebar__social-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar__social-item {
+  padding-top: 10px;
+  margin: 5px;
+  font-size: 18px;
+}
+
+.content {
+  padding-left: 300px;
+}
+
+.header {
+  position: relative;
+  min-height: 700px;
+}
+
+.header__svg {
+  position: absolute;
+  top: -120px;
+  z-index: 0;
+}
+
+.header__girl {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  z-index: 1;
+}
+
+.header__title {
+  position: absolute;
+  top: 190px;
+  right: 50px;
+  z-index: 2;
+  text-transform: uppercase;
+  font-size: 70px;
+  font-weight: 900;
+}
+
+.about {
+  position: relative;
+}
+
+.icons {
+  display: flex;
+}
+
+.icons__block {
+  width: 33%;
+}
+
+.icons__img {
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+
+.icons__title {
+  padding-top: 20px;
+  text-align: center;
 }

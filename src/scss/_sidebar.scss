@@ -7,6 +7,14 @@
   width: 300px;
   height: 100vh;
 
+  &__logo {
+
+    & img {
+      max-width: 200px;
+      display: block;
+    }
+  }
+
   &__menu {
 
     &-list {
@@ -16,13 +24,28 @@
     &-item {
 
       & a {
-        color: $link-color;
         font-size: 24px;
         font-weight: 900;
         line-height: 1.6;
-        text-decoration: none;
         text-transform: uppercase;
       }
     }
+  }
+
+  &__contact {
+    font-size: 24px;
+    font-weight: 900;
+  }
+
+  &__social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__social-item {
+    padding-top: 10px;
+    margin: 5px;
+    font-size: 18px;
   }
 }
