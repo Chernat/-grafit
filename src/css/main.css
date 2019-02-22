@@ -13,6 +13,11 @@ body {
 a {
   text-decoration: none;
   color: #000;
+  transition: color .2s linear;
+}
+
+a:hover {
+  color: #fff;
 }
 
 h2 {
@@ -46,11 +51,19 @@ h3 {
   list-style: none;
 }
 
+.sidebar__menu-item {
+  transition: transform .2s linear;
+}
+
 .sidebar__menu-item a {
   font-size: 24px;
   font-weight: 900;
   line-height: 1.6;
   text-transform: uppercase;
+}
+
+.sidebar__menu-item:hover {
+  transform: translateX(2%);
 }
 
 .sidebar__contact {
@@ -94,33 +107,119 @@ h3 {
 
 .header__title {
   position: absolute;
-  top: 190px;
-  right: 50px;
+  top: 230px;
+  right: 100px;
   z-index: 2;
   text-transform: uppercase;
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 900;
+  font-style: italic;
+  line-height: 1;
+}
+
+.header__white {
+  font-style: normal;
+  color: #fff;
 }
 
 .about {
   position: relative;
+  padding-right: 50px;
 }
 
-.icons {
+.about__svg {
+  position: absolute;
+  top: 140px;
+  right: 0;
+  z-index: 0;
+}
+
+.about__block {
+  display: flex;
+  position: relative;
+}
+
+.about__item {
+  display: flex;
+  padding: 20px 80px 20px 0;
+}
+
+.about__num {
+  font-size: 64px;
+  font-weight: 900;
+  padding-right: 40px;
+}
+
+.about__text {
+  font-size: 18px;
+}
+
+.title {
+  position: relative;
+  padding: 30px 0;
+}
+
+.title:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 80px;
+  width: 120px;
+  height: 5px;
+  background-color: #fff;
+}
+
+.price {
+  position: relative;
+  padding-right: 40px;
+}
+
+.price__table {
   display: flex;
 }
 
-.icons__block {
-  width: 33%;
+.price__item {
+  padding: 40px 60px;
+  background-color: #e7da22;
+  border-radius: 15px;
 }
 
-.icons__img {
-  display: block;
-  width: 200px;
-  height: 200px;
+.price__item--general {
+  padding: 60px 80px;
+  background-color: #000;
+  color: #fff;
 }
 
-.icons__title {
-  padding-top: 20px;
+.price__header {
   text-align: center;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.price__description {
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #9b942f;
+}
+
+.price__value {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  padding-top: 10px;
+}
+
+.price__coast {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.price__text {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.price__hint {
+  font-size: 16px;
 }

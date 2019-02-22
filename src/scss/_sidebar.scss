@@ -22,12 +22,16 @@
     }
 
     &-item {
-
+      transition: transform .2s linear;
       & a {
         font-size: 24px;
         font-weight: 900;
         line-height: 1.6;
         text-transform: uppercase;
+      }
+
+      &:hover {
+        transform: translateX(2%);
       }
     }
   }

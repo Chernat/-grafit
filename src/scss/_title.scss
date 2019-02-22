@@ -1,0 +1,13 @@
+.title {
+  position: relative;
+  padding: 30px 0;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 120px;
+    height: 5px;
+    background-color: #fff;
+  }
+}
