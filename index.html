@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Grafit - фітнес-студія в Вишгороді</title>
+    <meta name="description" content="Мережа фітнес клубів ✅Grafit ✅ пропонує комплексне схуднення, поліпшення фігури, зміцнення здоров'я." />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <script src="js/moveTo.min.js" charset="utf-8"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      const easeFunctions = {
+        easeInQuad: function (t, b, c, d) {
+          t /= d;
+          return c * t * t + b;
+        },
+        easeOutQuad: function (t, b, c, d) {
+          t /= d;
+          return -c * t* (t - 2) + b;
+        }
+      }
+      const moveTo = new MoveTo({
+        ease: 'easeInQuad'
+      }, easeFunctions);
+      const triggers = document.getElementsByClassName('js-trigger');
+      for (var i = 0; i < triggers.length; i++) {
+        moveTo.registerTrigger(triggers[i]);
+      }
+    });
+  </script>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="sidebar__logo">
+        <a class="sidebar__logo-img" href="/"><img src="img/logo.png" alt=""></a>
+      </div>
+      <nav class="sidebar__menu">
+        <ul class="sidebar__menu-list">
+          <li class="sidebar__menu-item"><a href="#about" class="js-trigger">Чому ми</a></li>
+          <li class="sidebar__menu-item"><a href="#imt" class="js-trigger">Дізнайся твій ІМТ</a></li>
+          <li class="sidebar__menu-item"><a href="#price" class="js-trigger">Які ціни</a></li>
+          <li class="sidebar__menu-item"><a href="#photo" class="js-trigger">Фото</a></li>
+          <li class="sidebar__menu-item"><a href="#contact" class="js-trigger">Як приєднатись</a></li>
+        </ul>
+      </nav>
+      <div class="sidebar__contact">
+        <ul class="sidebar__social-list">
+          <li class="sidebar__social-item"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="sidebar__social-item"><a href="https://www.facebook.com/"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </aside>
+    <section class="content">
+      <header class="mobile">
+        <div class="mobile__wrap">
+          <div class="mobile__logo">
+            <a class="sidebar__logo-img" href="#"><img src="img/logo-mobile.png" alt=""></a>
+          </div>
+          <nav class="mobile__navigation">
+            <input class="mobile__checkbox" type="checkbox" id="humburger">
+            <span class="mobile__burger-line mobile__burger-line--top"></span>
+            <span class="mobile__burger-line  mobile__burger-line--middle"></span>
+            <span class="mobile__burger-line mobile__burger-line--bottom"></span>
+            <ul class="mobile__nav-group">
+              <li class="mobile__item">
+                <a href="#about" class="mobile__item-link js-trigger">
+                  Чому ми
+                </a>
+              </li>
+              <li class="mobile__item">
+                <a href="#imt" class="mobile__item-link js-trigger">
+                  Дізнайся твій ІМТ
+                </a>
+              </li>
+              <li class="mobile__item">
+                <a href="#price" class="mobile__item-link js-trigger">
+                  Які ціни
+                </a>
+              </li>
+              <li class="mobile__item">
+                <a href="#photo" class="mobile__item-link js-trigger">
+                  Фото
+                </a>
+              </li>
+              <li class="mobile__item">
+                <a href="#contact" class="mobile__item-link js-trigger">
+                  Як приєднатись
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="header">
+        <object class="header__svg" type="image/svg+xml" data="img/shape.svg" width="700" height="700" >
+           Your browser does not support SVG
+        </object>
+        <img class="header__girl" src="img/girl.png" alt="girl runnig">
+        <h1 class="header__title"><span class="header__white">Фітнес-студія</span></br>саме для тебе.</h1>
+      </div>
+      <div class="about" id="about">
+        <object class="about__svg" type="image/svg+xml" data="img/shape2.svg" width="700" height="700" >
+           Your browser does not support SVG
+        </object>
+        <h2 class="about__title title">Чому обирають нас.</h2>
+        <div class="about__block">
+          <div class="about__text-block">
+            <div class="about__item">
+              <p class="about__num">1.</p>
+              <p class="about__text">В фитнес клубах «АтлетіКо» мы объединили лучшее в фитнес-индустрии: современное оборудование, команду высококвалифицированных сотрудников, эффективные программы, а самое важное - особую атмосферу, которая дает возможность почувствовать поддержку единомышленников и получить удовольствие от занятий спортом.</p>
+            </div>
+            <div class="about__item">
+              <p class="about__num">2.</p>
+              <p class="about__text">Нами разработаны программы тренировок с учетом любых интересов и предпочтений независимо от возраста или физической подготовки. Мужчины смогут посетить наши тренажерные залы, оснащенныe первоклассным профессиональным оборудованием. Представительницы прекрасной половины человечества получат заряд энергии на групповых или персональных тренировках.</p>
+            </div>
+            <div class="about__item">
+              <p class="about__num">3.</p>
+              <p class="about__text">«АтлетіКо» – это больше, чем просто фитнес-клуб. Это клуб спортивных удовольствий, предназначенный для близких по духу людей. Всех членов нашего клуба объединяет стремление быть лучшими всегда и во всем.</br></br>Приходите к нам уже сегодня и присоединяйтесь к команде здоровых и успешных людей!</p>
+            </div>
+          </div>
+          <img class="about__img" src="img/girl2.png" alt="fitnes girl">
+        </div>
+      </div>
+      <div class="imt" id="imt">
+        <h2 class="imt__title title">Розрахуйте ваш ІМТ.</h2>
+        <p class="imt__description">Індекс Маси Тіла (ІМТ) допомагає визначити, чи знаходиться Ваша вага в межах норми чи ні. Цей показник вважається більш достовірним, ніж окремо взяте значення ваги.</p>
+        <form class="imt__form" action="index.html" method="post">
+          <label class="imt__label" for="weight">Вага, кг
+            <input class="imt__input" id="weight" type="number" placeholder="Вага, кг">
+          </label>
+          <label class="imt__label" for="growth">Зріcт, cм
+            <input class="imt__input" id="growth" type="number" placeholder="Зріcт, cм">
+          </label>
+          <button class="imt__btn btn" type="button" onclick="calcImt()">Розрахувати</button>
+        </form>
+        <div class="imt__result">
+          <div class="imt__num-block">
+            <p class="imt__num-header">imt</p>
+            <p class="imt__num"></p>
+          </div>
+          <div class="imt__text">
+            <h3 class="imt__header"></h3>
+            <p class="imt__result-description"></p>
+          </div>
+        </div>
+      </div>
+      <div class="price" id="price">
+        <h2 class="price__title title">скільки це коштує.</h2>
+        <div class="price__table">
+          <div class="price__item">
+            <h3 class="price__header">gray</h3>
+            <p class="price__description">Один клас на вибір</p>
+            <div class="price__value">
+              <p class="price__coast">520<sup>₴</sup></p>
+              <p class="price__text">1 місяць</p>
+            </div>
+            <div class="price__value">
+              <p class="price__coast">940<sup>₴</sup></p>
+              <p class="price__text">2 місяці</p>
+            </div>
+            <div class="price__value">
+              <p class="price__coast">1360<sup>₴</sup></p>
+              <p class="price__text">3 місяці</p>
+            </div>
+          </div>
+          <div class="price__item price__item--general">
+            <h3 class="price__header">grafit</h3>
+            <p class="price__description">Всі класи</p>
+            <div class="price__value">
+              <p class="price__coast">800<sup>₴</sup></p>
+              <p class="price__text">1 місяць</p>
+            </div>
+            <div class="price__value">
+              <p class="price__coast">1500<sup>₴</sup></p>
+              <p class="price__text">2 місяці</p>
+            </div>
+            <div class="price__value">
+              <p class="price__coast">2100<sup>₴</sup></p>
+              <p class="price__text">3 місяці</p>
+            </div>
+          </div>
+          <div class="price__item">
+            <h3 class="price__header">lime</h3>
+            <p class="price__description">Разові тренування</p>
+            <div class="price__value">
+              <p class="price__coast">70<sup>₴</sup></p>
+              <p class="price__text">1-3 рази</p>
+            </div>
+            <div class="price__value">
+              <p class="price__coast">65<sup>₴</sup></p>
+              <p class="price__text">більше 4</p>
+            </div>
+            <div class="price__value">
+              <p class="price__hint">*термін дії 1 місяць</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="photo" id="photo">
+        <h2 class="photo__title title">наші фото.</h2>
+        <div class="photo__block">
+          <a class="photo__original" href="img/1.jpg" data-lightbox="grafit">
+            <img class="photo__thumb" src="img/1.jpg" alt="Дівчина">
+          </a>
+          <a class="photo__original" href="img/2.jpg" data-lightbox="grafit">
+            <img class="photo__thumb" src="img/2.jpg" alt="Дівчина">
+          </a>
+          <a class="photo__original" href="img/3.jpg" data-lightbox="grafit">
+            <img class="photo__thumb" src="img/3.jpg" alt="Дівчина">
+          </a>
+          <a class="photo__original" href="img/4.jpg" data-lightbox="grafit">
+            <img class="photo__thumb" src="img/4.jpg" alt="Дівчина">
+          </a>
+          <a class="photo__original" href="img/5.jpg" data-lightbox="grafit">
+            <img class="photo__thumb" src="img/5.jpg" alt="Дівчина">
+          </a>
+          <a class="photo__original" href="img/6.jpg" data-lightbox="grafit">
+            <img class="photo__thumb" src="img/6.jpg" alt="Дівчина">
+          </a>
+          <a class="photo__original" href="img/7.jpg" data-lightbox="grafit">
+            <img class="photo__thumb" src="img/7.jpg" alt="Дівчина">
+          </a>
+          <a class="photo__original" href="img/8.jpg" data-lightbox="grafit">
+            <img class="photo__thumb" src="img/8.jpg" alt="Дівчина">
+          </a>
+          <a class="photo__original" href="img/9.jpg" data-lightbox="grafit">
+            <img class="photo__thumb" src="img/9.jpg" alt="Дівчина">
+          </a>
+        </div>
+        <object class="photo__svg" type="image/svg+xml" data="img/shape3.svg" width="843" height="1124" >
+           Your browser does not support SVG
+        </object>
+      </div>
+      <div class="contact" id="contact">
+        <h2 class="contact__title title">як приєднатись.</h2>
+        <div class="contact__block">
+          <div class="contact__col">
+            <div class="contact__tel">
+              <p class="contact__header">Подзвони нам</p>
+              <a class="contact__item"href="tel:+380631234567">+38 063 123 45 67</a></br>
+              <a class="contact__item"href="tel:+380631234567">+38 063 123 45 67</a>
+            </div>
+            <div class="contact__social">
+              <p class="contact__header">Напиши нам</p>
+              <a class="contact__item"href="https://www.facebook.com/">www.instagram.com</a></br>
+              <a class="contact__item"href="https://www.facebook.com/">www.facebook.com</a>
+            </div>
+          </div>
+          <div class="contact__col">
+            <p class="contact__item">або</p>
+          </div>
+          <div class="contact__col">
+            <div class="contact__loc">
+              <p class="contact__header">Просто завітай до нас, ми будемо раді познайомитись :)</p>
+              <p class="contact__item">Тараса Шевченка, 2д, Вишгород, 07300</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact__map">
+          <iframe src="https://snazzymaps.com/embed/136080" width="100%" height="500px" style="border:none;"></iframe>
+        </div>
+      </div>
+    </section>
+    <script src="js/imt.js" charset="utf-8"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+  </body>
+</html>
