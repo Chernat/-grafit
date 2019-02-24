@@ -1,0 +1,38 @@
+.contact {
+  position: relative;
+  z-index: 1;
+  padding: 5px;
+
+  @include lg {
+    padding-right: 40px;
+  };
+
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &__col {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+
+    @include lg {
+      width: auto;
+    };
+  }
+
+  &__header {
+    font-size: 18px;
+  }
+
+  &__item {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__map {
+    padding-top: 30px;
+  }
+}

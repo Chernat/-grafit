@@ -2,16 +2,29 @@
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
+  display: none;
   flex-direction: column;
-  width: 300px;
+  width: 200px;
   height: 100vh;
+  z-index: 2;
+
+  @include md {
+    display: flex;
+  };
+
+  @include lg {
+    width: 300px;
+  }
 
   &__logo {
 
     & img {
-      max-width: 200px;
+      max-width: 160px;
       display: block;
+
+      @include lg {
+        max-width: 200px;
+      };
     }
   }
 
@@ -24,10 +37,14 @@
     &-item {
       transition: transform .2s linear;
       & a {
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 900;
         line-height: 1.6;
         text-transform: uppercase;
+
+        @include lg {
+          font-size: 24px
+        };
       }
 
       &:hover {

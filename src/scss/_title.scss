@@ -5,9 +5,14 @@
     content: '';
     position: absolute;
     left: 0;
-    top: 80px;
+    top: 65px;
     width: 120px;
-    height: 5px;
+    height: 2px;
     background-color: #fff;
+
+    @include lg {
+      top: 75px;
+      height: 3px;
+    };
   }
 }
