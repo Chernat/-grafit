@@ -13,6 +13,7 @@ a {
   text-decoration: none;
   color: $link-color;
   transition: color .2s linear;
+  display: block;
   &:hover {
     color: #fff;
   }

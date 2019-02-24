@@ -20,6 +20,7 @@ a {
   -webkit-transition: color .2s linear;
   -o-transition: color .2s linear;
   transition: color .2s linear;
+  display: block;
 }
 
 a:hover {
