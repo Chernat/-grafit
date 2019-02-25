@@ -9,6 +9,7 @@
   &__table {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
     @include sm {
       flex-direction: row;
@@ -27,10 +28,16 @@
 
     @include sm {
       padding: 10px 20px;
+      margin: 0;
+    };
+
+    @include sm {
+      padding: 20px 40px;
+      margin: 0;
     };
 
     @include xl {
-      padding: 40px 60px;
+      padding: 60px 80px;
     };
 
     &--general {

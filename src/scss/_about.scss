@@ -51,6 +51,17 @@
 
     @include lg {
       display: block;
+      width: 270px;
+    };
+
+    @include xl {
+      width: auto;
+    };
+  }
+
+  &__text-block {
+    @include xl {
+      padding-right: 40px;
     };
   }
 }
