@@ -1,18 +1,46 @@
 .price {
   position: relative;
-  padding-right: 40px;
+  padding: 5px;
+
+  @include sm {
+    padding: 15px;
+  };
 
   &__table {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include sm {
+      flex-direction: row;
+    };
   }
 
   &__item {
     padding: 40px 60px;
     background-color: $bg-darkness-color;
     border-radius: 15px;
+    transition: transform .2s linear;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+    }
+
+    @include sm {
+      padding: 10px 20px;
+      margin: 0;
+    };
+
+    @include sm {
+      padding: 20px 40px;
+      margin: 0;
+    };
+
+    @include xl {
+      padding: 60px 80px;
+    };
 
     &--general {
-      padding: 60px 80px;
       background-color: #000;
       color: #fff;
     }
@@ -23,6 +51,14 @@
     text-transform: uppercase;
     font-size: 50px;
     font-weight: 900;
+
+    @include sm {
+      font-size: 40px;
+    };
+
+    @include lg {
+      font-size: 50px;
+    };
   }
 
   &__description {

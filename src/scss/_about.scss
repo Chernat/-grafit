@@ -1,6 +1,15 @@
 .about {
   position: relative;
-  padding-right: 50px;
+  padding: 5px;
+
+  @include sm {
+    padding: 15px;
+  };
+
+  @include lg {
+    padding-right: 40px;
+  };
+
   &__svg {
     position: absolute;
     top: 140px;
@@ -15,16 +24,44 @@
 
   &__item {
     display: flex;
-    padding: 20px 80px 20px 0;
+    padding: 10px 0;
   }
 
   &__num {
-    font-size: 64px;
+    font-size: 34px;
     font-weight: 900;
-    padding-right: 40px;
+    padding-right: 10px;
+
+    @include sm {
+      font-size: 50px;
+    };
+
+    @include lg {
+      font-size: 60px;
+      padding-right: 20px;
+    };
   }
 
   &__text {
     font-size: 18px;
+  }
+
+  &__img {
+    display: none;
+
+    @include lg {
+      display: block;
+      width: 270px;
+    };
+
+    @include xl {
+      width: auto;
+    };
+  }
+
+  &__text-block {
+    @include xl {
+      padding-right: 40px;
+    };
   }
 }

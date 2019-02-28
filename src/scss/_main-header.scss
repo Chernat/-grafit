@@ -1,0 +1,129 @@
+.mobile {
+  padding: 20px 0;
+  position: relative;
+
+  @include md {
+    display: none;
+  }
+
+
+  &__wrap {
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    position: relative;
+    margin: 0;
+    z-index: 5;
+  }
+
+  &__logo-link {
+    font-size: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  &__navigation {
+    position: relative;
+    margin: 0;
+    z-index: 2;
+  }
+
+  &__checkbox {
+    position: absolute;
+    z-index: 3;
+    display: block;
+    width: 40px;
+    height: 32px;
+    cursor: pointer;
+    margin-right: 20px;
+    opacity: 0;
+
+      @include rwd(840) {
+        display: none;
+      }
+
+      &:checked ~ .mobile__burger-line {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+      }
+
+      &:checked ~ .mobile__burger-line--middle {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+      }
+
+      &:checked ~ .mobile__burger-line--bottom {
+        transform: rotate(-45deg) translate(0, -1px);
+      }
+
+      &:checked ~ .mobile__nav-group {
+        transform: translate(20px, 0);
+      }
+  }
+
+  &__burger-line {
+    position: relative;
+    top: 7px;
+    z-index: 2;
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 5px;
+    background: #000;
+    border-radius: 3px;
+    transform-origin: 4px 0;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+
+      @include rwd(840) {
+        display: none;
+      }
+
+      &--bottom {
+        transform-origin: 0% 100%;
+      }
+  }
+
+  &__nav-group {
+    position: absolute;
+    right: 0;
+    width: 100vw;
+    top: 50px;
+    padding: 9.5px 5px;
+    background: $bg-darkness-color;
+    transform-origin: 0% 0%;
+    transform: translate(120vw, 0);
+    transition: transform 0.1s cubic-bezier(0.77, 0.2, 0.05, 1);
+    list-style-type: none;
+
+      @include rwd(578) {
+        padding: 41.5px 5px;
+      }
+
+      @include rwd(840) {
+        position: static;
+        display: flex;
+        width: auto;
+        margin: 0;
+        padding: 0;
+        transform: none;
+      }
+  }
+
+  &__item {
+    list-style-type: none;
+    padding: 5px 0;
+    text-align: center;
+  }
+
+  &__item-link {
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.4s;
+  }
+}

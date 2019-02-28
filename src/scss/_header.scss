@@ -1,30 +1,83 @@
 .header {
   position: relative;
-  min-height: 700px;
+  min-height: 350px;
+
+  @include md {
+    min-height: 530px;
+  };
+
+  @include lg {
+    min-height: 630px;
+  };
 
   &__svg {
+    width: 500px;
+    height: auto;
     position: absolute;
+    left: 10px;
     top: -120px;
     z-index: 0;
+
+    @include sm {
+      left: 70px;
+    };
+
+    @include md {
+      width: 700px;
+    };
   }
 
   &__girl {
+    width: 230px;
     position: absolute;
     top: 20px;
-    left: 0px;
+    left: 0;
     z-index: 1;
+
+    @include sm {
+      left: 50px;
+    };
+
+    @include md {
+      width: 350px;
+    };
+
+    @include lg {
+      width: auto;
+    };
   }
 
   &__title {
     position: absolute;
-    top: 230px;
-    right: 100px;
-    z-index: 2;
+    top: 100px;
+    right: 10px;
+    z-index: 1;
     text-transform: uppercase;
-    font-size: 60px;
+    font-size: 34px;
     font-weight: 900;
     font-style: italic;
     line-height: 1;
+
+    @include sm {
+      font-size: 40px;
+      right: 70px;
+    };
+
+    @include md {
+      top: 210px;
+    };
+
+    @include lg {
+      font-size: 60px;
+      top: 240px;
+      right: 20px;
+    };
+
+    @include xl {
+      font-size: 60px;
+      top: 240px;
+      right: 140px;
+    };
   }
 
   &__white {
